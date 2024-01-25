@@ -1,0 +1,96 @@
+.header--nav{
+    height: 80px;
+    justify-content: space-between;
+    display: flexbox;
+    flex-direction: row;
+    padding: var(--Numbers-Space-Space-3, 16px) var(--Numbers-Space-Space-7, 50px);
+    border-bottom: 0.5px solid var(--Colors-stroke-border-gray, #808080);
+    background: var(--gradient, linear-gradient(90deg, #D07308 16.81%, #008000 80.55%));
+    
+
+    &--log {
+        display: flex;
+        width: 114px;
+        height: 64.1px;
+        padding: 0px 0.692px 2.848px 0.518px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.034px;
+        flex-shrink: 0;
+        margin-top: -5px;
+        margin-left: -10px;
+        &--image_1 {
+            width: 70.408px;
+            height: 49.828px;
+            flex-shrink: 0;
+
+        }
+        &--image_2 {
+            width: 112.79px;
+            height: 11.39px;
+            flex-shrink: 0;
+        }
+    }
+    &--ul {
+        display: flex;
+        flex-direction: row;
+        width: 513px;
+        padding: var(--Numbers-Space-Space-0, 0px);
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        margin-left: 300px;
+        margin-top: -45px;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            color: #FAFAFA;
+        }
+        a:hover {
+            color: black;
+
+        }
+    }
+    &--user {
+        display: flex;
+        width: 137px;
+        padding: var(--Numbers-Space-Space-0, 0px);
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        margin-left: 900px;
+        list-style-type: none;
+        margin-top: -45px;
+        padding: 10px;
+
+        a {
+            text-decoration: none;
+            color: #FAFAFA;
+        }
+        a:hover {
+            color: black;
+        }
+        &--login {
+            border-radius: 8px;
+            background:#FAFAFA;
+            display: flex;
+            padding: var(--Numbers-Space-Space-2, 8px) var(--Numbers-Space-Space-7, 50px);
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0px 1px 50px 0px;
+            margin-left: 30px;
+            
+            button {
+                background-color: white;
+                border: none;
+                color:#008000;
+                font-size: 20px;
+
+
+            }
+        }
+
+    }
+}
