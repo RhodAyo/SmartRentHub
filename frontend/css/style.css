@@ -33,7 +33,7 @@
   font-family: "Open Sans";
   font-size: 17px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800px;
   line-height: normal;
   color: #fafafa;
 }
@@ -85,6 +85,9 @@
   align-self: stretch;
   background-color: var(--Colors-bg-bg-dark, #101010);
   color: #fafafa;
+}
+li:hover {
+  color: #008000;
 }
 
 .col--1 {
@@ -176,6 +179,7 @@
   font-weight: 400;
   line-height: normal;
   color: #fafafa;
+  text-align: left;
 }
 
 .subtitle-list {
