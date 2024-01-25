@@ -1,0 +1,70 @@
+.header--nav--home, 
+.header--nav--about, 
+.header--nav--blog, 
+.header--nav--career,
+.header--nav--user--signup {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main--hero--container--edge--home {
+    color: var(--Colors-text-text-light, #FAFAFA);
+    /* HEADING */
+    font-family: "Open Sans Hebrew";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.main--hero--container--edge--look {
+    color: var(--Colors-text-text-light, #FAFAFA);
+    /* SUBTITLE BOLD */
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+h5 {
+    color: var(--Colors-text-text-accent, #008000);
+    text-align: center;
+    /* SUBTITLE BOLD */
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+p {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    /* BODY */
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main--container--knowus--words--p0 {
+    color: #FAFAFA;
+    /* TITLE */
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: left;
+}
+.main--container--knowus--words--p1, .main--container--knowus--words--p2 {
+    color:#101010;
+    /* BODY BOLD */
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}

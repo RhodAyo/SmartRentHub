@@ -1,0 +1,18 @@
+// Abstract Style
+@import "./abstracts/functions", "./abstracts/mixins", "./abstracts/variables";
+
+// Base Style
+@import "./base/normalize", "./base/reset", "./base/typography";
+
+// Component Style
+@import "./components/hero.scss", "./components/whatwedo.scss", "./components/knowus.scss";
+
+// Layout Style
+@import "./layouts/header";
+
+// Page Style
+
+
+// Themes style
+
+// Vendors Style

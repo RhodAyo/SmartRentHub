@@ -1,0 +1,25 @@
+.main--container--knowus {
+    display: flex;
+    padding: 50px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: linear-gradient(90deg, #D07308 16.81%, #008000 80.55%);
+
+    &--words {
+        width: 600px;
+        &p0 {
+            margin-top: 0px;
+        }
+    }
+    &--image {
+        float: right;
+        margin-right: -60px;
+        width: 500px;
+        height: 400px;
+        margin-top: -60px;
+        margin-left: -30px;
+    }
+
+}
