@@ -90,6 +90,13 @@ li:hover {
   color: #008000;
 }
 
+.footer__logo-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 50px;
+}
+
 .col--1 {
   width: 294px;
   height: 49px;
