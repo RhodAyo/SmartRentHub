@@ -1,25 +1,27 @@
 .main--container--knowus {
     display: flex;
-    padding: 50px 30px;
-    justify-content: center;
-    align-items: center;
+    padding: var(--Numbers-Space-Space-8, 100px) var(--Numbers-Space-Space-7, 50px);
+    flex-direction: row;
     gap: 10px;
     align-self: stretch;
-    background: linear-gradient(90deg, #D07308 16.81%, #008000 80.55%);
-
+    height: 490px;
+    background: var(--gradient, linear-gradient(90deg, #D07308 16.81%, #008000 80.55%));
     &--words {
         width: 600px;
-        &p0 {
-            margin-top: 0px;
+        &--p2 {
+            margin-top: 5px;
+    
         }
     }
     &--image {
-        float: right;
-        margin-right: -60px;
-        width: 500px;
-        height: 400px;
-        margin-top: -60px;
-        margin-left: -30px;
+        width: 50%;
+        & img {
+            width: 625px;
+            position: absolute;
+            right: 10px;
+            height: 500px;
+            top: 1470px;
+        }
     }
 
 }
