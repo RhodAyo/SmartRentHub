@@ -1,0 +1,11 @@
+.property--container--slide {
+    @mixin desktop-screen {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+}
