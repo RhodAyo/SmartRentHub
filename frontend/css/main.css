@@ -243,7 +243,7 @@ p {
   gap: 10px;
   align-self: stretch;
   height: 490px;
-  background: var(--gradient, linear-gradient(90deg, #D07308 16.81%, #008000 80.55%)); }
+  background: linear-gradient(90deg, #D07308 16.81%, #008000 80.55%); }
   .main--container--knowus--words {
     width: 600px; }
     .main--container--knowus--words--p2 {
