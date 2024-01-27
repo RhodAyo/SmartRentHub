@@ -80,9 +80,44 @@ p {
 }
 .mybutton {
     color: var(--Colors-text-text-light, #FAFAFA);
-    /* BODY */
+    
     font-family: "Open Sans";
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.property--container--heading p {
+    color: #008000;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.property--container--images--1--heading,
+.property--container--images--2--heading {
+    color: #008000;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.property--container--images--1--money,
+.property--container--images--2--money {
+    color:#101010;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.property--container--images--1--location,
+.property--container--images--2--location {
+    color: #808080;
+    font-family: "Open Sans";
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
