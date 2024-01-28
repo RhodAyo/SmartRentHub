@@ -11,7 +11,7 @@
   display: flex;
   color: var(--Colors-text-text-light, #fafafa);
   padding: var(--Numbers-Space-Space-8, 100px)
-    var(--Numbers-Space-Space-9, 150px);
+  var(--Numbers-Space-Space-9, 150px);
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -88,6 +88,13 @@
 }
 li:hover {
   color: #008000;
+}
+
+.footer__logo-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 50px;
 }
 
 .col--1 {
