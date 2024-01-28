@@ -138,12 +138,11 @@ p {
   image-rendering: crisp-edges; }
   .main--hero--container {
     display: flex;
-    padding: 36px;
+    padding: var(--Numbers-Space-Space-5, 36px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    gap: 36px;
+    gap: var(--Numbers-Space-Space-5, 36px);
     border-radius: 8px;
     background: rgba(188, 188, 188, 0.2);
     /* glassmorphism */
@@ -242,20 +241,20 @@ p {
   flex-direction: row;
   gap: 10px;
   align-self: stretch;
-  height: 490px;
-  background: linear-gradient(90deg, #D07308 16.81%, #008000 80.55%); }
-  .main--container--knowus--words {
-    width: 600px; }
-    .main--container--knowus--words--p2 {
-      margin-top: 20px; }
+  background: linear-gradient(90deg, #D07308 16.81%, #008000 80.55%);
+  flex-direction: row;
+  position: relative; }
+  .main--container--knowus--words--p2 {
+    margin-top: 20px; }
   .main--container--knowus--image {
-    width: 50%; }
-    .main--container--knowus--image img {
-      width: 625px;
-      position: absolute;
-      right: 10px;
-      height: 500px;
-      top: 1470px; }
+    width: 765px;
+    height: 576px;
+    float: right;
+    margin-right: -50px;
+    margin-top: -100px; }
+    .main--container--knowus--imageimg {
+      width: 765px;
+      height: 576px; }
 
 .property--container {
   display: flex;

@@ -4,23 +4,25 @@
     flex-direction: row;
     gap: 10px;
     align-self: stretch;
-    height: 490px;
     background: linear-gradient(90deg, #D07308 16.81%, #008000 80.55%);
+    flex-direction: row;
+    position: relative;
     &--words {
-        width: 600px;
         &--p2 {
             margin-top: 20px;
         }
     }
     &--image {
-        width: 50%;
-        & img {
-            width: 625px;
-            position: absolute;
-            right: 10px;
-            height: 500px;
-            top: 1470px;
-        }
+        width: 765px;
+        height: 576px;
+        float: right;
+        margin-right: -50px;
+        margin-top: -100px;
+        &img {
+            width: 765px;
+            height: 576px;
+            
+        } 
     }
 
 }
