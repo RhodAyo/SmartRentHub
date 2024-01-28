@@ -10,17 +10,18 @@
     line-height: normal;
 }
 .main--hero--container--edge--home {
-    color: var(--Colors-text-text-light, #FAFAFA);
+    color:  #FAFAFA;
     /* HEADING */
     font-family: "Open Sans Hebrew";
-    font-size: 40px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding: 10px;
 
 }
 .main--hero--container--edge--look {
-    color: var(--Colors-text-text-light, #FAFAFA);
+    color:  #FAFAFA;
     /* SUBTITLE BOLD */
     font-family: "Open Sans";
     font-size: 24px;
@@ -39,7 +40,7 @@ h5 {
     line-height: normal;
 }
 p {
-    color: var(--Colors-text-text-dark, #101010);
+    color: #101010;
     text-align: center;
     /* BODY */
     font-family: "Open Sans";
@@ -67,4 +68,22 @@ p {
     font-weight: 700;
     line-height: normal;
     text-align: left;
+}
+#budget, #location, #prototype {
+    color: var(--Colors-text-text-dark, #101010);
+/* BODY */
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mybutton {
+    color: var(--Colors-text-text-light, #FAFAFA);
+    /* BODY */
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
