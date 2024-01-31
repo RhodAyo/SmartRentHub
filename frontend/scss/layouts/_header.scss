@@ -92,10 +92,13 @@
         list-style-type: none;
         margin-top: -45px;
         padding: 10px;
+        &--signup {
+            color: white;
+        }
 
         a {
             text-decoration: none;
-            color: #FAFAFA;
+        
         }
         a:hover {
             color: black;
@@ -116,10 +119,17 @@
                 border: none;
                 color:#008000;
                 font-size: 20px;
+                a:hover {
+                    color: #000;
+                }
 
 
             }
+            
         }
 
     }
+}
+.login {
+    text-decoration: none;
 }

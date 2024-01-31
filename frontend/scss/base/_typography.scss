@@ -120,3 +120,157 @@ p {
     font-weight: 400;
     line-height: normal;
 }
+.signup--container--aside p {
+    color: var(--Colors-text-text-light, #FAFAFA);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 0px 100px;
+
+}
+.signup--container--form--heading p:first-child{
+    color: var(--Colors-text-text-dark, #101010);
+/* TITLE */
+font-family: "Open Sans";
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-right: -100px;
+float: left;
+
+}
+.signup--container--form--heading p:nth-child(2) {
+    color: var(--Colors-text-text-dark, #101010);
+text-align: center;
+/* SUBTITLE BOLD */
+font-family: "Open Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.signup--container--form--heading2 h6 {
+    color: var(--Colors-text-text-dark, #101010);
+text-align: center;
+/* BODY */
+font-family: "Open Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.signup--container--form--heading2 a {
+    color: var(--Colors-text-text-pry, #E87C00);
+text-align: center;
+/* BODY BOLD */
+font-family: "Open Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+#label--user, #label--pass {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.signup--container--form--btn {
+    color: var(--Colors-text-text-light, #FAFAFA);
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.login {
+    color: var(--Colors-text-text-accent, #008000);
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--form--div1--wel {
+    color: var(--Colors-text-text-dark, #101010);
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.login--main--form--div1--login {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    /* SUBTITLE BOLD */
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login--main--form--div2--acc {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--form--div2 a {
+    color: var(--Colors-text-text-pry, #E87C00);
+    text-align: center;
+
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login--main--form--div3--btn button {
+    color: var(--Colors-text-text-light, #FAFAFA);
+/* BODY */
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--aside p {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+/* TITLE */
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.login--main--form--div3--forget {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--form--div3--forget {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
