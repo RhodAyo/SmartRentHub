@@ -1,0 +1,101 @@
+* {
+    font-family: Open Sans, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .side-bar {
+    position: fixed;
+    box-sizing: border-box;
+    background: black;
+    top: 0;
+    bottom: 0;
+    width: 338px;
+    justify-content: space-between;
+    color: #fafafa;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    img {
+      border-radius: 50%;
+      width: 186px;
+      height: 181px;
+      margin-top: 20px;
+    }
+    #userName {
+      font-weight: 700;
+    }
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  li {
+    padding: 5px;
+  }
+  
+  .log_out i,
+  .log-out_btn {
+    color: red;
+  }
+  
+  .down-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 338px;
+  height: 138px;
+  gap: 10px;
+  }
+  
+  a:hover {
+    background-color:#BCBCBC;
+    color: black;
+    fill: black;
+    font-weight: 600;
+  }
+  
+  /** Main area css  **/
+  
+  .main-content {
+  position: relative;
+  background: #FFFFFF;
+  height: 100%;
+  width: calc(100% - 338px);
+  left: 338px;
+  }
+  
+  .welcome-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 700;
+  width: 740px;
+  height: 33px;
+  top: 39px;
+  left: 300px;  
+  }
+  .green{
+    color: #008000;
+  }
