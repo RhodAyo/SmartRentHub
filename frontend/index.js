@@ -5,7 +5,9 @@ const imageContainer = document.querySelector(".main--hero");
     imageContainer.style.backgroundSize = "100%";
     
 function validateSignup () {
-    const username = document.getElementById('username').value;
+    const firstName = document.getElementById('firstname').value;
+    const lastName = document.getElementById('lastname').value;
+    const userName = generateUsername(firstName, lastName);
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
 
@@ -19,6 +21,6 @@ function validateSignup () {
     // If all validation passes, you can submit the form or perform other actions
     alert("Signup successful!");
      // Redirect to the desired page (replace 'dashboard.html' with the actual page URL)
-     window.location.href = 'dashboard.html';
-
+     //window.location.href = 'dashboard.html';
+    return 'dashboard.html'
 }

@@ -2,7 +2,7 @@
     @media (max-width: 480px) and (min-width: 768px) {
         @content;
     }
-};
+}
 @mixin desktop-screen {
     @media (min-width: 1025px) {
         @content;
