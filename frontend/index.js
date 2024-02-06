@@ -24,3 +24,18 @@ function validateSignup () {
      //window.location.href = 'dashboard.html';
     return 'dashboard.html'
 }
+const menu = document.querySelector('.header--nav--menu');
+const menuBtn = document.querySelector('.header--nav--menu--btn');
+let showMenu = false;
+
+menu.addEventListener('click', toggleMenu);
+function toggleMenu() {
+    if (!showMenu) {
+        menuBtn.classList.add('open');
+        shownMenu = True;
+    } else {
+        menuBtn.classList.remove('open');
+
+        showMenu = false;
+    }
+}

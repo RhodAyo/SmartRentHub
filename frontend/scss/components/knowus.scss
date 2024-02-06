@@ -7,6 +7,12 @@
     background: linear-gradient(90deg, #D07308 16.81%, #008000 80.55%);
     flex-direction: row;
     position: relative;
+    @include mobile-screen {
+        flex-direction: column;
+        height: 1000px;
+        align-items: center;
+        justify-content: center;
+    }
     &--words {
         &--p2 {
             margin-top: 20px;
@@ -25,4 +31,14 @@
         } 
     }
 
+}
+.landscape {
+    @include mobile-screen {
+        width: 357px;
+        height: 270px;
+        margin-top: 150px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 150px;
+    }
 }

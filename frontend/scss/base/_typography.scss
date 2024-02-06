@@ -18,6 +18,16 @@
     font-weight: 700;
     line-height: normal;
     padding: 10px;
+    @include mobile-screen {
+        //styleName: TITLE;
+        font-family: Open Sans;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
 
 }
 .main--hero--container--edge--look {
@@ -28,6 +38,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    @include mobile-screen {
+        //styleName: BODY BOLD;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 }
 h5 {
     color: var(--Colors-text-text-accent, #008000);
@@ -405,12 +424,26 @@ text-align: center;
 }
 .forget--main--form--btn {
     //styleName: BODY;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FAFAFA;
+
+}
+.mybutton1 {
+    //styleName: BODY;
 font-family: Open Sans;
 font-size: 17px;
 font-weight: 400;
 line-height: 23px;
 letter-spacing: 0em;
-    text-align: center;
-    color: #FAFAFA;
-
+text-align: left;
+color: #FAFAFA;
+@include mobile-screen {
+    font-size: 16px;
+    
+}
 }
