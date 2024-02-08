@@ -24,17 +24,25 @@ function validateSignup () {
      //window.location.href = 'dashboard.html';
     return 'dashboard.html'
 }
-const menu = document.querySelector('.header--nav--menu');
-const menuBtn = document.querySelector('.header--nav--menu--btn');
+const menuBtn = document.querySelector('.header--nav--menu');
+const hamburge = document.querySelector('.header--nav--menu--btn');
+const nav = document.querySelector('.header--nav--div');
+const menuNav = document.querySelector('.header--nav--ul');
+
 let showMenu = false;
 
 menu.addEventListener('click', toggleMenu);
 function toggleMenu() {
     if (!showMenu) {
-        menuBtn.classList.add('open');
-        shownMenu = True;
+        hamburge.classList.add('open');
+        nav.classList.add('open');
+        menuNav.classList.add('ópen');
+        
+        shownMenu = true;
     } else {
-        menuBtn.classList.remove('open');
+        hamburge.classList.remove('open');
+        nav.classList.remove('open');
+        menuNav.classList.remove('ópen');
 
         showMenu = false;
     }

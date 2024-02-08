@@ -84,6 +84,7 @@
                     height: 3px;
                     background-color: #FAFAFA;
                     @include transition-ease;
+                    
                     &::before {
                         content: '';
                         position: absolute;
@@ -105,11 +106,32 @@
                     &.open {
                         transform: rotate(720deg);
                         background: transparent;
+                        &::before {
+                            transform: rotate(45deg) translate(5px, 8px);
+                        }
+                        &::after {
+                            width: 28px;
+                            transform: rotate(-45deg) translate(3px, -7px);
+                        }
                     }
                 }
             }
         }
 
+    }
+    &--div {
+        @include mobile-screen {
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            opacity: 0.98;
+            &.open {
+                visibility: visible;
+            }
+
+        }
     }
     &--ul {
         display: flex;
@@ -124,7 +146,17 @@
         margin-top: -45px;
         list-style-type: none;
         @include mobile-screen {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #D07308;
+            padding: 1rem;
+            transform: translateY(-100%);
+            &.open {
+                transform: translateY(0);
+            }
 
         }
         a {
@@ -150,9 +182,7 @@
         list-style-type: none;
         margin-top: -45px;
         padding: 10px;
-        @include mobile-screen {
-            display: none;
-        }
+        
         &--signup {
             color: white;
             @include mobile-screen {
