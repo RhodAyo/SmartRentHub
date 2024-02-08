@@ -26,8 +26,8 @@ function validateSignup () {
 }
 const menuBtn = document.querySelector('.header--nav--menu');
 const hamburge = document.querySelector('.header--nav--menu--btn');
-const nav = document.querySelector('.header--nav--div');
-const menuNav = document.querySelector('.header--nav--ul');
+//const nav = document.querySelector('.header--nav--div');
+//const menuNav = document.querySelector('.header--nav--ul');
 
 let showMenu = false;
 
@@ -35,14 +35,14 @@ menu.addEventListener('click', toggleMenu);
 function toggleMenu() {
     if (!showMenu) {
         hamburge.classList.add('open');
-        nav.classList.add('open');
-        menuNav.classList.add('ópen');
+        //nav.classList.add('open');
+       // menuNav.classList.add('ópen');
         
-        shownMenu = true;
+        showMenu = true;
     } else {
         hamburge.classList.remove('open');
-        nav.classList.remove('open');
-        menuNav.classList.remove('ópen');
+        //nav.classList.remove('open');
+        //menuNav.classList.remove('ópen');
 
         showMenu = false;
     }
