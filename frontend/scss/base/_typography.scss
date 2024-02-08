@@ -148,6 +148,18 @@ p {
     font-weight: 800;
     line-height: normal;
     padding: 0px 100px;
+    @include mobile-screen {
+        //styleName: TITLE;
+
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 120%;
+        padding: 60px;
+        margin: 0px 20px 0px 20px;
+    }
 
 }
 .signup--container--form--heading p:first-child{
@@ -274,6 +286,17 @@ line-height: normal;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    @include mobile-screen {
+        //styleName: TITLE;
+        font-family: Open Sans;
+        font-size: 39px;
+        font-weight: 800;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 10px;
+        margin: 0px 30px 0px 30px;
+    }
 }
 .login--main--form--div3--forget {
     color: var(--Colors-text-text-dark, #101010);
