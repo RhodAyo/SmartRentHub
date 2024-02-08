@@ -474,7 +474,7 @@ label {
     backdrop-filter: blur(7.5px); }
     @media (max-width: 968px) {
       .main--hero--container {
-        margin: 10px 10px;
+        margin: 80px 20px 0px 20px;
         width: 100%;
         position: relative; } }
     .main--hero--container--edge {
