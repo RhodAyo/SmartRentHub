@@ -12,6 +12,7 @@
     image-rendering: crisp-edges;
     @include mobile-screen {
         width: 100%;
+       
     }
 
     &--container {
@@ -26,7 +27,7 @@
         /* glassmorphism */
         backdrop-filter: blur(7.5px);
         @include mobile-screen {
-            margin: 10px 10px;
+           margin: 80px 20px 0px 20px;
             width: 100%;
             position: relative;
             
