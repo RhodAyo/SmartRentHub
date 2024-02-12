@@ -76,6 +76,35 @@ propRouter.post("/addproperty", (req, res) => {
       });
   }
 });
+propRouter.get("/getAllProperty", async (req, res) => {
+  try {
+    // const dbase = db.db("Smartrenthub")
+    // let id = ObjectID(req.params.id);
+    // dbase
+    //   .collection("name")
+    //   .find()
+    //   .toArray((err, results) => {
+    //     res.send(results);
+    //   });
+    const properties = await property.find({});
+    if (properties) {
+      return res.status(200).json({
+        message: "Property successfully retrieved",
+        properties,
+      });
+    } else {
+      return res.status(404).json({
+        message: "Property not found",
+      });
+    }
+  } catch (error) {
+    return res.status(400).json({
+      message: "Property retrieval failed",
+      error,
+      route: "/getAllProperty",
+    });
+  }
+});
 
 propRouter.get("/getproperty/:id", async (req, res) => {
   try {
@@ -98,41 +127,6 @@ propRouter.get("/getproperty/:id", async (req, res) => {
       message: "Property retrieval failed",
       error,
       route: "/getproperty/:id",
-    });
-  }
-});
-propRouter.get("/getAllProperty", async (req, res) => {
-  try {
-    const dbase = db.db("Smartrenthub");
-    let id = ObjectID(req.params.id);
-    dbase
-      .collection("properties")
-      .find()
-      .toArray((err, results) => {
-        res.send(results);
-      });
-    //     const properties = await property.find({});
-    //     if (properties) {
-    //       return res.status(200).json({
-    //         message: "Property successfully retrieved",
-    //         properties,
-    //       });
-    //     } else {
-    //       return res.status(404).json({
-    //         message: "Property not found",
-    //       });
-    //     }
-    //   } catch (error) {
-    //     return res.status(400).json({
-    //       message: "Property retrieval failed",
-    //       error,
-    //       route: "/getAllProperty",
-    //     });
-  } catch (error) {
-    return res.status(400).json({
-      message: "Property retrieval failed",
-      error,
-      route: "/getAllProperty",
     });
   }
 });
