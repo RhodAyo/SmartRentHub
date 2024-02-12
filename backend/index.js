@@ -1,12 +1,23 @@
+const collection = require("./config/db");
+const model = require("./models/User");
 const express = require("express");
+const path = require("path");
 
 const app = express();
 const PORT = 3000;
 
-app.get("/", (req, res) => {
-  res.status(200);
-  res.send("Hello World");
-});
+const bodyParser = require("express").json;
+const ownersRouter = require("./routes/owners");
+const views = path.join(__dirname, "./../frontend");
+// app.use(express.static("public"))
+app.use(bodyParser());
+// app.set('view engine', 'ejs');
+app.use("/user", ownersRouter);
+
+// app.get("/", (req, res) => {
+//   res.status(200);
+//   res.send("Hello World");
+// });
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
