@@ -6,12 +6,13 @@
 
 // Component Style
 @import "./components/hero.scss", "./components/whatwedo.scss", "./components/knowus.scss";
+@import "./components/property.scss", "./components/slide.scss";
 
 // Layout Style
 @import "./layouts/header";
 
 // Page Style
-
+@import "./pages/signup", "./pages/login", "./pages/changepassword", "./pages/otp", "./pages/forgetpassword.scss";
 
 // Themes style
 

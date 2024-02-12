@@ -4,6 +4,46 @@ const imageContainer = document.querySelector(".main--hero");
     imageContainer.style.backgroundImage = "url('./assets/dbdfc26503d1b6150202f1563142a02a.jpg')";
     imageContainer.style.backgroundSize = "100%";
     
-const imageKnow = document.querySelector(".main--container--knowus--image");
-    imageKnow.style.backgroundImage = "url"('./assets/landscape 2.png')
-    imageKnow.style.backgroundSize = "100%"
+function validateSignup () {
+    const firstName = document.getElementById('firstname').value;
+    const lastName = document.getElementById('lastname').value;
+    const userName = generateUsername(firstName, lastName);
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return;
+    }
+
+    // Perform additional validation if needed
+
+    // If all validation passes, you can submit the form or perform other actions
+    alert("Signup successful!");
+     // Redirect to the desired page (replace 'dashboard.html' with the actual page URL)
+     //window.location.href = 'dashboard.html';
+    return 'dashboard.html'
+}
+const menuBtn = document.querySelector('.header--nav--menu');
+const hamburge = document.querySelector('.header--nav--menu--btn');
+//const nav = document.querySelector('.header--nav--div');
+//const menuNav = document.querySelector('.header--nav--ul');
+
+let showMenu = false;
+
+menu.addEventListener('click', toggleMenu);
+function toggleMenu() {
+    if (!showMenu) {
+        hamburge.classList.add('open');
+        //nav.classList.add('open');
+       // menuNav.classList.add('ópen');
+        
+        showMenu = true;
+    } else {
+        hamburge.classList.remove('open');
+        //nav.classList.remove('open');
+        //menuNav.classList.remove('ópen');
+
+        showMenu = false;
+    }
+}

@@ -1,7 +1,7 @@
-.header--nav--home, 
-.header--nav--about, 
-.header--nav--blog, 
-.header--nav--career,
+.header--nav--link, 
+.header--nav--link, 
+.header--nav--link, 
+.header--nav--link,
 .header--nav--user--signup {
     font-family: "Open Sans";
     font-size: 24px;
@@ -18,6 +18,16 @@
     font-weight: 700;
     line-height: normal;
     padding: 10px;
+    @include mobile-screen {
+        //styleName: TITLE;
+        font-family: Open Sans;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
 
 }
 .main--hero--container--edge--look {
@@ -28,6 +38,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    @include mobile-screen {
+        //styleName: BODY BOLD;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 }
 h5 {
     color: var(--Colors-text-text-accent, #008000);
@@ -42,7 +61,6 @@ h5 {
 p {
     color: #101010;
     text-align: center;
-    /* BODY */
     font-family: "Open Sans";
     font-size: 17px;
     font-style: normal;
@@ -51,7 +69,6 @@ p {
 }
 .main--container--knowus--words--p0 {
     color: #FAFAFA;
-    /* TITLE */
     font-family: "Open Sans";
     font-size: 36px;
     font-style: normal;
@@ -80,10 +97,376 @@ p {
 }
 .mybutton {
     color: var(--Colors-text-text-light, #FAFAFA);
-    /* BODY */
+    
     font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.property--container--heading p {
+    color: #008000;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.property--container--images--1--heading,
+.property--container--images--2--heading {
+    color: #008000;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.property--container--images--1--money,
+.property--container--images--2--money {
+    color:#101010;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.property--container--images--1--location,
+.property--container--images--2--location {
+    color: #808080;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.signup--container--aside p {
+    color: var(--Colors-text-text-light, #FAFAFA);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 0px 100px;
+    @include mobile-screen {
+        //styleName: TITLE;
+
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 120%;
+        padding: 60px;
+        margin: 0px 20px 0px 20px;
+    }
+
+}
+.signup--container--form--heading p:first-child{
+    color: var(--Colors-text-text-dark, #101010);
+/* TITLE */
+font-family: "Open Sans";
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-right: -100px;
+float: left;
+
+}
+.signup--container--form--heading p:nth-child(2) {
+    color: var(--Colors-text-text-dark, #101010);
+text-align: center;
+/* SUBTITLE BOLD */
+font-family: "Open Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.signup--container--form--heading2 h6 {
+    color: var(--Colors-text-text-dark, #101010);
+text-align: center;
+/* BODY */
+font-family: "Open Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.signup--container--form--heading2 a {
+    color: var(--Colors-text-text-pry, #E87C00);
+text-align: center;
+/* BODY BOLD */
+font-family: "Open Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+#label--user, #label--pass {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.signup--container--form--btn {
+    color: var(--Colors-text-text-light, #FAFAFA);
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.login {
+    color: var(--Colors-text-text-accent, #008000);
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--form--div1--wel {
+    color: var(--Colors-text-text-dark, #101010);
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.login--main--form--div1--login {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    /* SUBTITLE BOLD */
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login--main--form--div2--acc {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--form--div2 a {
+    color: var(--Colors-text-text-pry, #E87C00);
+    text-align: center;
+
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login--main--form--div3--btn button {
+    color: var(--Colors-text-text-light, #FAFAFA);
+/* BODY */
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--aside p {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+/* TITLE */
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    @include mobile-screen {
+        //styleName: TITLE;
+        font-family: Open Sans;
+        font-size: 39px;
+        font-weight: 800;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 10px;
+        margin: 0px 30px 0px 30px;
+    }
+}
+.login--main--form--div3--forget {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login--main--form--div3--forget {
+    color: var(--Colors-text-text-dark, #101010);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.change--password--section--para--1 {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: Open Sans;
+    line-height: 49.03px;
+    color: #101010;
+}
+.change--password--section--para--2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.68px;
+    font-family: Open Sans;
+    color: #101010;
+}
+label {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Open Sans;
+    line-height: 23.15px;
+    color: #101010;
+}
+.change--password--section--form--btn {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #FAFAFA;
+}
+.change--password--section--para {
+    //styleName: BODY;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #101010;
+}
+.otp--main--section--para--1 {
+    font-family: Open Sans;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101010;
+}
+.otp--main--section--para--2 {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101010;
+   
+
+}
+.otp--main--section--p {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    & span {
+        color: #E87C00;
+    }
+}
+#input1, #input2, #input3, #input4, #input5 {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+
+}
+.otp--main--section--btn {    
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #FAFAFA;
+}
+.forget--main--heading--1 {
+    //styleName: TITLE;
+    font-family: Open Sans;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101010;
+}
+.forget--main--heading--2 {
+    //styleName: SUBTITLE BOLD;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #101010;
+}
+#username_or_email {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.forget--main--footer {
+    //styleName: BODY;
+font-family: Open Sans;
+font-size: 17px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+    color: #101010;
+
+}
+.forget--main--form--btn {
+    //styleName: BODY;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FAFAFA;
+
+}
+.mybutton1 {
+    //styleName: BODY;
+font-family: Open Sans;
+font-size: 17px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+color: #FAFAFA;
+@include mobile-screen {
+    font-size: 16px;
+    
+}
 }
