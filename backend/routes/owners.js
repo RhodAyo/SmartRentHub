@@ -5,14 +5,21 @@ const user = require("./../models/User");
 const passHash = require("bcrypt");
 
 ownersRouter.post("/signup", (req, res) => {
-  let { name, email, password, dateOfBirth } = req.body;
+  let { name, email, password, dateOfBirth, category } = req.body;
   name = name.trim();
   email = email.trim();
   password = password.trim();
   dateOfBirth = dateOfBirth.trim();
+  category = category.trim();
 
   //check to see if the fields are empty
-  if (name == "" || email == "" || password == "" || dateOfBirth == "") {
+  if (
+    name == "" ||
+    email == "" ||
+    password == "" ||
+    dateOfBirth == "" ||
+    category == ""
+  ) {
     res.json({
       status: "Fail to signup",
       message: "Empty input fields",
@@ -21,6 +28,11 @@ ownersRouter.post("/signup", (req, res) => {
     res.json({
       status: "Failed",
       message: "Invalid name entered",
+    });
+  } else if (!/^[a-zA-Z ]*$/.test(category)) {
+    res.json({
+      status: "Failed",
+      message: "Invalid Category entered",
     });
   } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
     res.json({
@@ -57,6 +69,7 @@ ownersRouter.post("/signup", (req, res) => {
                 email,
                 password: encryptedPass,
                 dateOfBirth,
+                category,
               });
               newUser
                 .save()
@@ -147,19 +160,28 @@ ownersRouter.post("/signin", (req, res) => {
       });
   }
 });
-// ownersRouter.put("/:id", (req, res) => {
-//   const id = req.params.id;
-//   const property = req.property;
-//   const index = houses.findIndex((house) => house.id == id);
 
-//   if (index == -1) {
-//     res.status(404).end("Property not found");
-//     return;
-//   }
-
-//   houses[index] = house;
-//   res.json(house);
-// });
+ownersRouter.get("/getAllUsers", async (req, res) => {
+  try {
+    const users = await user.find({});
+    if (users) {
+      return res.status(200).json({
+        message: "Users successfully retrieved",
+        users,
+      });
+    } else {
+      return res.status(404).json({
+        message: "Users not available",
+      });
+    }
+  } catch (error) {
+    return res.status(400).json({
+      message: "Users  retrieval failed",
+      error,
+      route: "/getAllUsers",
+    });
+  }
+});
 
 // ownersRouter.delete("/:id", (req, res) => {
 //   const id = req.params.id;
