@@ -5,6 +5,7 @@ const userSchema = new schema({
   name: { type: String, required: true },
   email: String,
   password: { type: String, required: true },
+  category: { type: String, required: true },
   dateOfBirth: Date,
 });
 

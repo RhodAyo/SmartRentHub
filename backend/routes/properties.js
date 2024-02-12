@@ -133,17 +133,18 @@ propRouter.get("/getproperty/:id", async (req, res) => {
 
 propRouter.get("/getcategory/:category", async (req, res) => {
   try {
-    const categories = await property.find({
-      category: req.params.category,
+    category = req.body.category;
+    const category = await property.find({
+      category: { $in: category },
     });
-    if (!categories) {
+    if (!category) {
       return res.status(404).json({
         message: "Category not found",
       });
     } else {
       return res.status(200).json({
         message: `Category ${category} successfully retrieved`,
-        categories,
+        category,
       });
     }
   } catch (error) {
