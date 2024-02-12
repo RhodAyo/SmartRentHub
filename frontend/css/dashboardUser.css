@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .side-bar {
   position: fixed;
   box-sizing: border-box;
@@ -18,7 +22,7 @@
   color: #fafafa;
 }
 
-.profile-details {
+.side-bar   .profile-details {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +39,7 @@
   }
 }
 
-.nav-links {
+.side-bar  .nav-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +54,7 @@ a {
 
 li {
   padding: 5px;
+  margin-top: 0px;
 }
 
 .log_out i,
@@ -64,7 +69,6 @@ li {
   justify-content: center;
   width: 338px;
   height: 138px;
-  gap: 10px;
 }
 
 a:hover {
@@ -76,9 +80,9 @@ a:hover {
 /** Main area css  **/
 
 .main-content {
-  position: fixed;
+  position: absolute;
   background: #ffffff;
-  height: 100vh;
+  min-height: 100vh;
   width: calc(100% - 338px);
   left: 338px;
 }
@@ -159,7 +163,6 @@ a:hover {
   cursor: pointer;
 }
 
-
 .icon-badge {
   position: absolute;
   top: 0;
@@ -178,4 +181,225 @@ a:hover {
   border: none;
   outline: none;
   background-color: transparent;
+}
+
+.results {
+  gap: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  position: absolute;
+  padding: 10px;
+}
+
+.results .location {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 871px;
+  height: n 42px;
+  gap: 50px;
+  margin-top: 60px;
+  padding-left: 15px;
+}
+nav .search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #008000;
+  width: 215.93px;
+  height: 42px;
+  padding: 9px, 39px, 9px, 39px;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+nav .search-box input {
+  width: 109px;
+  height: 23px;
+  border: none;
+  outline: none;
+}
+
+nav .price-search,
+.property-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #008000;
+  width: 149px;
+  height: 41px;
+  padding: 9px, 39px, 9px, 39px;
+  border-radius: 8px;
+  border: 1px solid #008000;
+  gap: 10px;
+}
+
+.price-search input {
+  width: 40px;
+  height: 23px;
+  gap: 5px;
+  border: none;
+  outline: none;
+}
+
+.property-type input {
+  width: 108px;
+  height: 23px;
+  gap: 5px;
+  border: none;
+  outline: none;
+}
+
+nav .filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #008000;
+  width: 161px;
+  height: 42px;
+  padding: 9px, 39px, 9px, 39px;
+  border-radius: 8px;
+  border: 1px solid #008000;
+  gap: 10px;
+}
+
+.filter input {
+  width: 49px;
+  height: 23px;
+  gap: 5px;
+  border: none;
+  outline: none;
+}
+
+.properties-tag {
+  gap: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  position: absolute;
+  padding: 10px;
+  line-height: 32.68px;
+}
+
+.properties-tag .view-all {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  line-height: 23.15px;
+}
+
+.rpn {
+  display: flex;
+  width: 376px;
+  height: 23px;
+  top: 409px;
+  left: 378px;
+  gap: 20px;
+  margin-left: 12px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.rpn a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.rpn a:hover {
+  background-color: transparent;
+  color: #008000;
+}
+.rpn a:active {
+  color: #008000;
+}
+
+.main-content .property-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1, 038px;
+  height: 285px;
+  left: 1px;
+  padding: 10px;
+  gap: 25px;
+}
+
+.main-content .property-area .home {
+  width: 218.41px;
+  height: 264.19px;
+  border-radius: 5.22px;
+  gap: 6.52px;
+  position: relative;
+}
+
+.property-area .home img {
+  width: 218.41px;
+  height: 218.41px;
+  object-fit: contain;
+}
+
+.property-area .home-one {
+  position: absolute;
+  bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #008000;
+  margin-left: 10px;
+}
+.property-area .home-one--price {
+  position: absolute;
+  left: 120px;
+  bottom: 10px;
+  font-weight: 400;
+}
+
+.home-one--location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 3.5px;
+  gap: 6.52px;
+  margin-left: 10px;
+}
+
+.home-one--location .location-tag {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
+.main-content .property-area-1, .property-area-2{
+ display: flex;
+ flex-direction: row;
+ width: 900px;
+height: 285px;
+left: 1px;
+padding: 10px;
+gap: 25px;
+
 }
